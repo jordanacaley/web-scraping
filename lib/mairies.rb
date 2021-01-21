@@ -29,15 +29,13 @@ def get_townhall_urls
     end
 
   # Get array of all city emails
-  # Need to run the get_townhall_email method passing it each townhall_url from the town_urls_array
+  # Run the get_townhall_email method passing it each townhall_url from the town_urls_array
   town_emails_array = []
-  i = 0
-  while i < town_urls_array.length
-    town_emails_array.push(get_townhall_email(town_urls_array[i]))
-    i = i + 1
+  town_urls_array.each do |url|
+    town_emails_array.push(get_townhall_email(url))
   end
 
-  # Zip the 2 new arrays together in a hash
+  # Zip the town names and town emails arrays together in a hash
   a = Hash[town_names_array.zip(town_emails_array)]
 
   # Return the hash
