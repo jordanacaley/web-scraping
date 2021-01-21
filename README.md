@@ -1,5 +1,4 @@
 In this project, I practice web scraping with Ruby gem nokogiri.
-
 <ol>
   <li>In the app.rb program, I scrape a list of all cryptocurrency symbols and values from https://coinmarketcap.com/all/views/all/ and associate them in a hash.<li>
   <li>In the mairies.rb program, I scrape the email addresses of all town halls in the Val d'Oise department and associate them in a hash.<li>
