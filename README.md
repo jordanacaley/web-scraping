@@ -1,0 +1,1 @@
+In this project, I practice web scraping with Ruby gem nokogiri.
